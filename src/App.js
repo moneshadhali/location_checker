@@ -4,7 +4,6 @@ import LocationContainer from "./container/LocationContainer";
 function App() {
   return (
     <div className="App">
-      <h1>testing</h1>
       <LocationContainer></LocationContainer>
     </div>
   );
