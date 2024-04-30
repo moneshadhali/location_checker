@@ -37,10 +37,10 @@ const LocationContainer = () => {
 
   return (
     <>
-      <SimpleMap />
       <h1>IP Geolocation LookUp</h1>
       {ipGEO ? (
         <div>
+          <SimpleMap longitude={ipGEO.longitude} latitude={ipGEO.latitude} />
           <p>IP Address: {ipGEO.ip_address}</p>
           <p>ISP Name: {ipGEO.connection.isp_name}</p>
           <p>City: {ipGEO.city}</p>
@@ -55,10 +55,10 @@ const LocationContainer = () => {
             Currency :{ipGEO.currency.currency_name} -{" "}
             {ipGEO.currency.currency_code}
           </p>
-          <img
+          {/* <img
             src="https://static.abstractapi.com/country-flags/GB_flag.png"
             alt="country flag"
-          />
+          /> */}
         </div>
       ) : (
         ""
