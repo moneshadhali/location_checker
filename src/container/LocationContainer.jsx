@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const LocationContainer = () => {
   const [ipAddress, setIpAddress] = useState("");
@@ -17,7 +17,7 @@ const LocationContainer = () => {
   const fetchGEO = async () => {
     try {
       const response = await fetch(
-        `https://ipgeolocation.abstractapi.com/v1/?api_key=1d7530eccbc64892a13e023dac585ed6&ip_address=${ipAddress}`
+        `https://ipgeolocation.abstractapi.com/v1/?api_key=${process.env.REACT_APP_API_KEY}&ip_address=${ipAddress}`
       );
       const data = await response.json();
       setIpGEO(data);
@@ -25,8 +25,13 @@ const LocationContainer = () => {
       console.error(error);
     }
   };
-  fetchIp();
-  //   fetchGEO();
+
+  useEffect(() => {
+    fetchIp();
+    if (ipAddress) {
+      fetchGEO();
+    }
+  }, [ipAddress]);
 
   return (
     <>
