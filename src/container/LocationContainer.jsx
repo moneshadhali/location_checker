@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import SimpleMap from "../component/SimpleMap";
 
 const LocationContainer = () => {
   const [ipAddress, setIpAddress] = useState("");
@@ -36,6 +37,7 @@ const LocationContainer = () => {
 
   return (
     <>
+      <SimpleMap />
       <h1>IP Geolocation LookUp</h1>
       {ipGEO ? (
         <div>
