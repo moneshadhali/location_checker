@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header,
+footer {
+  background-color: #575761;
+  color: #e4fde1;
+  padding: 1rem;
+}
+
+header + div {
+  padding: 2rem 4rem;
+  padding-top: 6rem;
+}
