@@ -37,20 +37,14 @@ const LocationContainer = () => {
 
   return (
     <>
-      <header>
-        <h1>IP Geolocation LookUp</h1>
-      </header>
       {ipGEO ? (
-        <div>
+        <>
           <IPGeoInfo ipGEO={ipGEO} />
           <SimpleMap longitude={ipGEO.longitude} latitude={ipGEO.latitude} />
-        </div>
+        </>
       ) : (
         ""
       )}
-      <footer>
-        <p>Copyright © 2024. All rights reserved.</p>
-      </footer>
     </>
   );
 };

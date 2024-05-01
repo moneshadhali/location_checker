@@ -3,9 +3,17 @@ import LocationContainer from "./container/LocationContainer";
 
 function App() {
   return (
-    <div className="App">
-      <LocationContainer></LocationContainer>
-    </div>
+    <>
+      <header>
+        <h1>IP Geolocation LookUp</h1>
+      </header>
+      <div className="app">
+        <LocationContainer />
+      </div>
+      <footer>
+        <p>Copyright © 2024. All rights reserved.</p>
+      </footer>
+    </>
   );
 }
 

@@ -11,9 +11,18 @@ footer {
   padding: 1rem;
 }
 
-header + div {
+.app {
   padding: 2rem 4rem;
   color: #648381;
+  display: flex;
+  flex-direction: row;
+  height: 82vh;
+}
+
+.app > * {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 3rem;
 }
 
 img {
