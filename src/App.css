@@ -7,11 +7,22 @@
 header,
 footer {
   background-color: #575761;
-  color: #e4fde1;
+  color: #ffbf46;
   padding: 1rem;
 }
 
 header + div {
   padding: 2rem 4rem;
-  padding-top: 6rem;
+  color: #648381;
+}
+
+img {
+  width: 30px;
+  height: 20px;
+  margin-left: 0.5rem;
+}
+
+span {
+  font-weight: bold;
+  color: #575761;
 }

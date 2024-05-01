@@ -1,8 +1,12 @@
 const IPGeoInfo = ({ ipGEO }) => {
   return (
-    <>
-      <p>IP Address: {ipGEO.ip_address}</p>
-      <p>ISP Name: {ipGEO.connection.isp_name}</p>
+    <section>
+      <p>
+        IP Address: <span>{ipGEO.ip_address}</span>
+      </p>
+      <p>
+        ISP Name: <span>{ipGEO.connection.isp_name}</span>
+      </p>
       <p>City: {ipGEO.city}</p>
       <p>Region: {ipGEO.region}</p>
       <p>Country: {ipGEO.country}</p>
@@ -13,11 +17,14 @@ const IPGeoInfo = ({ ipGEO }) => {
       <p>
         Currency: {ipGEO.currency.currency_name}- {ipGEO.currency.currency_code}
       </p>
-      <img
-        src="https://static.abstractapi.com/country-flags/GB_flag.png"
-        alt="country flag"
-      />
-    </>
+      <p>
+        Country Flag:
+        <img
+          src="https://static.abstractapi.com/country-flags/GB_flag.png"
+          alt="country flag"
+        />
+      </p>
+    </section>
   );
 };
 
