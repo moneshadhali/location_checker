@@ -40,8 +40,8 @@ const LocationContainer = () => {
       <h1>IP Geolocation LookUp</h1>
       {ipGEO ? (
         <div>
-          <SimpleMap longitude={ipGEO.longitude} latitude={ipGEO.latitude} />
           <IPGeoInfo ipGEO={ipGEO} />
+          <SimpleMap longitude={ipGEO.longitude} latitude={ipGEO.latitude} />
         </div>
       ) : (
         ""
