@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# IP Geolocation LookUp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Installation Instruction](#installation)
+3. [Tech Stack](#tech-stack)
+4. [Wireframe](#wireframe)
+5. [Component Diagram](#component-diagram)
 
-## Available Scripts
+<a id="introduction"></a>
+### Introduction
+This React website displays information about the geolocation of a given IP address.
 
-In the project directory, you can run:
+The following are the information displayed on the website:
+- **IP Address:** 86.6.69.183
+- **ISP Name:** Virgin Media
+- **City:** Waltham Forest
+- **Region:** England
+- **Country:** United Kingdom
+- **Continent:** Europe
+- **Time:** 17:21:39 (BST)
+- **Currency:** Sterling - GBP
+- And a Map of the IP location
 
-### `npm start`
+<a id="installation"></a>
+### Installation Instruction
+1. Clone the repository to your local machine  `git clone project_link`.
+2. Navigate to the project directory (in the terminal).
+3. Create a `.env` file inside the project file structure.
+4. Obtain an API key from [Abstract API](https://app.abstractapi.com).
+5. Paste this command in the `.env` file: `REACT_APP_API_KEY = Your_API_key`.
+6. Replace `Your_API_key` with your own unique key.
+7. Install dependencies using `npm install`.
+8. Run the application using `npm start`.
+9. Access the website in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a id="tech-stack"></a>
+## Tech Stack
+This Project was build using the following technologies:
+- **JavaScript + React**: For building interactive UIs and managing state.
+- **HTML**: The standard markup language for creating web pages.
+- **CSS**: For styling and presenting the content elegantly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+And used the API from this website [Abstract API](https://app.abstractapi.com).
 
-### `npm test`
+## Dependencies
+This React application uses the following packages:
+- leaflet: "^1.9.4"
+- react: "^18.3.1"
+- react-dom: "^18.3.1"
+- react-leaflet: "^4.2.1"
+- react-scripts: "5.0.1"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a id="wireframe"></a>
+### Wireframe 
 
-### `npm run build`
+<a id="component-diagram"></a>
+### Component Diagram 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
