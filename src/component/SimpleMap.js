@@ -12,7 +12,6 @@ const SimpleMap = ({ longitude, latitude }) => {
         zoom={13}
         scrollWheelZoom={true}
         ref={mapRef}
-        style={{ height: "50vh", width: "50vw" }}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

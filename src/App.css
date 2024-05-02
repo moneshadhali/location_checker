@@ -36,16 +36,20 @@ span {
   color: #575761;
 }
 
+.leaflet-container {
+  height: 50vh;
+  width: 70vh;
+}
+
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
   .app,
   .app > * {
     margin: 0;
     padding: 0;
   }
-
+  .leaflet-container {
+    width: 60vh;
+  }
   .app {
     flex-direction: column;
     padding: 2rem 4rem;
