@@ -38,7 +38,7 @@ span {
 
 .leaflet-container {
   height: 50vh;
-  width: 70vh;
+  width: 70vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,9 +46,6 @@ span {
   .app > * {
     margin: 0;
     padding: 0;
-  }
-  .leaflet-container {
-    width: 60vh;
   }
   .app {
     flex-direction: column;
