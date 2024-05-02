@@ -35,3 +35,22 @@ span {
   font-weight: bold;
   color: #575761;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .app,
+  .app > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .app {
+    flex-direction: column;
+    padding: 2rem 4rem;
+  }
+  .app > * {
+    padding-bottom: 2rem;
+  }
+}
