@@ -53,6 +53,7 @@ This React application uses the following packages:
 
 <a id="wireframe"></a>
 ### Wireframe 
+![image](https://github.com/moneshadhali/location_checker/assets/99983599/172e99e6-ded9-412c-89c6-430b076f63cd)
 
 <a id="component-diagram"></a>
 ### Component Diagram 
