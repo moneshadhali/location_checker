@@ -57,4 +57,5 @@ This React application uses the following packages:
 
 <a id="component-diagram"></a>
 ### Component Diagram 
+![image](https://github.com/moneshadhali/location_checker/assets/99983599/6cf4b9e1-4dca-4c5a-987c-b9cfa3924366)
 
